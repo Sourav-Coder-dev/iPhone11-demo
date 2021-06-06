@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="swiper.css">
+ <link rel="stylesheet" href="fa/css/all.css">
+ <link rel="stylesheet" href="fa/webfonts">
+</head>
+
+<body>
+ <img id="mobileBg" src="Pictures/mobileBg.png" />
+ <div id="content">
+  <div id="powerOff">
+   <i class="fab fa-apple" id="appleLogo"></i>
+   <p id="appleStart"></p>
+  </div>
+  <img id="timewifi" src="Pictures/timewifi.png" />
+  <span id="time">9:41</span>
+  <div id="lockscreen">
+   <div id="cardOne">
+    <div id="topBar">
+     <img src="png/ios-message-1575946.png" />
+     <span id="messages">MESSAGES</span>
+     <span id="now">clear</span>
+    </div>
+    <p id="msg">Hey! </br>
+     Codings goin' on
+    </p>
+   </div>
+   <div id="cardTwo">
+    <div id="tpbr">
+     <img src="png/apple-music-2365226.png" />
+     <span id="music">MUSIC</span>
+     <span id="msclr">clear</span>
+    </div>
+   </div>
+   <button id="unlock">
+    <i class=" fa fa-fingerprint"></i>
+   </button>
+   <span id="locktime">9:41</span>
+   <button id="torch"></button>
+   <button id="camera"></button>
+   <div id="bottom">
+   </div>
+  </div>
+  <div id="screen">
+   <div id="dock">
+    
+    <button class="icon">
+    
+    </button>
+    <button class="icon">
+    
+    </button>
+    <button class="icon">
+     
+    </button>
+    <button class="icon">
+     
+    </button>
+   </div>
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide" id="firstPage">
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+     </div>
+     <div class="swiper-slide" id="secondPage">
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+     </div>
+     <div class="swiper-slide" id="thirdPage">
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+      <button class="icon"></button>
+     </div>
+    </div>
+    <div class="swiper-pagination">
+    </div>
+   </div>
+  </div>
+  <script src="jquery.js"></script>
+  <script src="swiper.js"></script>
+  <script src="main.js"></script>
+  <script>
+   $(document).ready(function() {
+    $("#unlock").click(function() {
+     $("#lockscreen").slideUp();
+    });
+    $("#powerOff").click(function() {
+     $("#powerOff").hide();
+    });
+   });
+   var swiper = new Swiper(".swiper-container", {
+    direction: "horizontal",
+    pagination: {
+     el: ".swiper-pagination",
+     loop: true,
+    },
+   });
+  </script>
+  <script>
+  </script>
+</body>
+
+</html>
